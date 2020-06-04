@@ -122,7 +122,7 @@ contract geoDonation {
 }
 ```
 
-For more information about `solidity` language, refer to their official documentation ![here](https://solidity.readthedocs.io/en/latest/).
+For more information about `solidity` language, refer to their official documentation [here](https://solidity.readthedocs.io/en/latest/).
 
 ### Strengths and Weaknesses of Blockchain-based DApp
 
