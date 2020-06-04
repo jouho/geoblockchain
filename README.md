@@ -6,7 +6,7 @@ Edited by: Jou Ho
 
 ## Project Description
 
-![](img/vulnetable_people.png)
+![](img/vulnertable_people.png)
 
 ### Purpose
 
