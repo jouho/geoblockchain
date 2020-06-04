@@ -56,71 +56,69 @@ DApp = frontend + contracts
 
 Below is a sample of developing smart contract writte in a programming language called `solidity`:
 
-```
-pragma solidity ^0.5.10;
+    pragma solidity ^0.5.10;
 
-contract geoDonation {
-    constructor() public {
+    contract geoDonation {
+        constructor() public {
+        }
+
+        // a structure that holds information for a location and corresponding donation details
+        struct registeredLocation {
+            address ownerAddress;
+            uint goal;
+            uint balance;
+            bytes32 description;
+            bytes32 owner;
+            bytes32 coordinate;
+            bool exists;
+        }
+
+        // map of registeredLocation as value and coordinate as keys
+        mapping(bytes32 => registeredLocation) locations;
+
+        // register and post a donation call
+        function register(bytes32 _coordinate, bytes32 _owner, bytes32 _description, uint _goal) public {
+            // creates empty registeredLocation struct
+            registeredLocation memory c = registeredLocation(msg.sender, _goal, 0, _description, _owner, _coordinate, true);
+            // // wallet address of the function caller
+            // c.ownerAddress = msg.sender;
+            // // target amount of donation
+            // c.goal = _goal;
+            // // initializes the amount of donation as 0
+            // c.balance = 0;
+            // // place fopr users to explain the call for this donation
+            // c.description = _description;
+            // // owner of this donation post. ex: XXX organization
+            // c.owner = _owner;
+            // // set exists to true
+            // c.exists = true;
+            // // add this struct to the locations mapping
+            locations[_coordinate] = c;
+        }
+
+        // donate money to a location upon checking if the location is registered
+        function donate(uint amount, bytes32 latlng) public {
+            require(locations[latlng].exists);
+            locations[latlng].balance += amount;
+        }
+
+        function getOwnerInfo(bytes32 latlng) public view returns (bytes32) {
+            require(locations[latlng].exists);
+            return locations[latlng].owner;
+        }
+
+        // returns how much is donated to a location
+        function getBalance(bytes32 latlng) public view returns (uint) {
+            require(locations[latlng].exists);
+            return locations[latlng].balance;
+        }
+
+        // when retrieving the donation money, check if the function caller is the owner of this donation post
+        function isOwner(bytes32 _coordinate) public view returns (bool) {
+            if (locations[_coordinate].ownerAddress == msg.sender)
+                return true;
+        }
     }
-
-    // a structure that holds information for a location and corresponding donation details
-    struct registeredLocation {
-        address ownerAddress;
-        uint goal;
-        uint balance;
-        bytes32 description;
-        bytes32 owner;
-        bytes32 coordinate;
-        bool exists;
-    }
-
-    // map of registeredLocation as value and coordinate as keys
-    mapping(bytes32 => registeredLocation) locations;
-
-    // register and post a donation call
-    function register(bytes32 _coordinate, bytes32 _owner, bytes32 _description, uint _goal) public {
-        // creates empty registeredLocation struct
-        registeredLocation memory c = registeredLocation(msg.sender, _goal, 0, _description, _owner, _coordinate, true);
-        // // wallet address of the function caller
-        // c.ownerAddress = msg.sender;
-        // // target amount of donation
-        // c.goal = _goal;
-        // // initializes the amount of donation as 0
-        // c.balance = 0;
-        // // place fopr users to explain the call for this donation
-        // c.description = _description;
-        // // owner of this donation post. ex: XXX organization
-        // c.owner = _owner;
-        // // set exists to true
-        // c.exists = true;
-        // // add this struct to the locations mapping
-        locations[_coordinate] = c;
-    }
-
-    // donate money to a location upon checking if the location is registered
-    function donate(uint amount, bytes32 latlng) public {
-        require(locations[latlng].exists);
-        locations[latlng].balance += amount;
-    }
-
-    function getOwnerInfo(bytes32 latlng) public view returns (bytes32) {
-        require(locations[latlng].exists);
-        return locations[latlng].owner;
-    }
-
-    // returns how much is donated to a location
-    function getBalance(bytes32 latlng) public view returns (uint) {
-        require(locations[latlng].exists);
-        return locations[latlng].balance;
-    }
-
-    // when retrieving the donation money, check if the function caller is the owner of this donation post
-    function isOwner(bytes32 _coordinate) public view returns (bool) {
-        if (locations[_coordinate].ownerAddress == msg.sender)
-            return true;
-    }
-}
-```
 
 For more information about `solidity` language, refer to their official documentation [here](https://solidity.readthedocs.io/en/latest/).
 
@@ -172,8 +170,26 @@ Above are the main functions of this DApp. However, there are, and will be, func
 
 #### Client Tier
 
+HTML, JavaScript, and CSS that composes a user interface. For the basemap, leaflet's open street map is used for simple and intuitive styled map. These UI elements are subject to change for improvements.
+
+Open Street Map view:
+
+![](img/osm.png)
+
 #### Logic Tier
 
+JavaScript is used to connect to the data stored inside Ethereum blockchain. It also processes the data retrieved from blockchain to visualize them in UI.
+
 #### Data Tier
+
+Smart contract represents the data structure and data storage for this DApp. It is written in `solidity` language and defines data structure and functions to be deployed to the Ethereum network. This smart contact can then be utilized to store and access data from external calls.
+
+### Main Libraries and Resources
+
+|Library|Description|Usage in this Project|
+|-|-|-|
+|Web3.js|web3.js is a collection of libraries which allow you to interact with a local or remote ethereum node, using a HTTP or IPC connection.|Used to talk to the Ethereum node, which allows utilizing the smart contract.|
+|jQuery|jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code. jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.|Used to write javascript in a more simple manner.|
+|Leaflet|Leaflet is a widely used open source JavaScript library used to build web mapping applications.|Used to access different basemap features and extensions that can be added, such as address search bar, to create an interactive web map.|
 
 ### Challenges and Concerns
