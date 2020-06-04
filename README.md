@@ -1,7 +1,5 @@
 # Geoblockchain Project
 
-* * *
-
 Edited by: Jou Ho
 
 ## Project Description
@@ -29,7 +27,52 @@ The goal of this project is to create a decentralized application (referred to a
 
 ### What is Blockchain and DApp
 
+#### Blockchain
+
+![](img/blockchain.png)
+
+A blockchain is a growing list of records, known as blocks, that are connected using cryptography. Every block contains a cryptanalytic hash of the previous block, a timestamp, and transaction information.
+
+By design, a blockchain is a proof against modification of the information. It is an open, distributed ledger that will record transactions between 2 parties with efficiency and during a verifiable and permanent manner. To be used as a distributed ledger, a blockchain is often managed by a peer-to-peer network put together adhering to a protocol for inter-node communication and confirming new blocks. Once recorded, the information in any given block cannot be altered retroactively without the alteration of all subsequent blocks, which needs a consensus of the network majority. Though blockchain records are not unalterable, blockchains are also thought of as secure by design and exemplify a distributed computing system with high Byzantine fault tolerance. A decentralized agreement has therefore been claimed with a blockchain.
+
+Blockchain was invented by someone (or cluster of people) using the name Satoshi Nakamoto in 2008 to serve as the public transaction ledger of the cryptocurrency bitcoin. The identity of Satoshi Nakamoto is unknown. The invention of the blockchain for bitcoin created the primary digital currency to unravel the double-spending downside without requiring a proper authority or central server. The bitcoin design has inspired different applications, and cryptocurrencies widely use blockchains that are transparent by the general public. Blockchain is taken into account a sort of payment rail. Non-public blockchains are proposed for business use.
+
+#### Decentralized Application (DApp)
+
+![](img/DApp.png)
+
+DApp is an abbreviated form of decentralized application.
+A DApp has its backend code running on a decentralized peer-to-peer network. Contrast this with an app where the backend code is running on centralized servers.
+
+A DApp can have frontend code and user interfaces written in any language (just like an app) that can make calls to its backend. Furthermore, its frontend can be hosted on decentralized storage such as Swarm or IPFS.
+
+In this project, Ethereum network is used to create a DApp. Ethereum is one of the popular programmable blockchain in the world. Like other blockchains, Ethereum has a native cryptocurrency called Ether (ETH), but unlike other blockchains, Ethereum can do much more since Ethereum is programmable. This means that developers can use it to build new kinds of applications, notably DApp.
+
+If an app = frontend + server, since Ethereum contracts are code that runs on the global Ethereum decentralized peer-to-peer network, then:
+
+DApp = frontend + contracts
+
 ### Strengths and Weaknesses of Blockchain-based DApp
+
+#### Strengths
+
+The main advantages of using decentralized applications:
+
+-   Payment processing does not require a third-party financial operator. In a decentralized network, transactions between users are performed directly and in cryptocurrency.
+-   There is no need for registration or subscription due to the use of public and private keys for accessing data.
+-   Open source and public registry make sure the platform is transparent and easy to use.
+
+These criteria are all beneficial in the development of a donation application.
+
+#### Weaknesses
+
+The main disadvantages of using decentralized applications:
+
+-   Fixing bugs or updating DApps is difficult, as every peer in the network has to update their node software.
+-   Some applications require verification of user identity, and as there is no central authority to verify the user identity, it becomes an issue while developing such applications.
+-   They are challenging to build because they use very complex protocols to achieve consensus, and they have to be built to scale from the start itself. So we cannot just implement an idea and then, later on, add more features and scale it.
+
+These weaknesses are something that is yet to be solved for this project. We will need further ideas and development of our DApp in the future.
 
 ### Major Functions
 
