@@ -12,6 +12,8 @@ The motivation behind this project is to support vulnerable populations around t
 
 ### Authors
 
+![](img/hgis.png)
+
 The initial idea and design of this project is created by Bo Zhao, a geography professor at the University of Washington and the Pincipal Investigator at Humanistic GIS Laboratory. The initial development of the application is developed by Jou Ho, an undergraduate student at the University of Washington and a member of HGIS Lab. For more information about us and the HGIS Lab, visit our website at <https://hgis.uw.edu/>
 
 ### Goals
@@ -70,9 +72,9 @@ The main disadvantages of using decentralized applications:
 
 -   Fixing bugs or updating DApps is difficult, as every peer in the network has to update their node software.
 -   Some applications require verification of user identity, and as there is no central authority to verify the user identity, it becomes an issue while developing such applications.
--   They are challenging to build because they use very complex protocols to achieve consensus, and they have to be built to scale from the start itself. So we cannot just implement an idea and then, later on, add more features and scale it.
+-   They are challenging to build because they use very complex protocols to achieve consensus, and **they have to be built to scale from the start itself** (very important). So we cannot just implement an idea and then, later on, add more features and scale it.
 
-These weaknesses are something that is yet to be solved for this project. We will need further ideas and development of our DApp in the future.
+These weaknesses are something that is yet to be solved for this project. We will need further ideas and improvements for our DApp in the future.
 
 ### Major Functions
 
@@ -94,6 +96,14 @@ Above are the main functions of this DApp. However, there are, and will be, func
 -   security measures against malicious use of this applications
 -   improving overall user experience (UX) and user interface (UI)
 
-### System Architechture
+### System Architecture
+
+![](img/sys_arch.png)
+
+#### Client Tier
+
+#### Logic Tier
+
+#### Data Tier
 
 ### Challenges and Concerns
