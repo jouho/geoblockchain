@@ -8,13 +8,13 @@ Edited by: Jou Ho
 
 ### Purpose
 
-The motivation behind this project is to support vulnerable populations around the world. Vulnerable populations include, but not limited to, economically disadvantaged, racial and ethnic minorities, the uninsured, low-income children, the elderly, the homeless, those with human immunodeficiency virus (HIV), and those with other chronic health conditions, including severe mental illness. It may also include rural residents, who often encounter barriers to accessing healthcare services. The vulnerability of these individuals is enhanced by race, ethnicity, age, sex, and factors such as income, insurance coverage (or lack thereof), and absence of a usual source of care. Their health and healthcare problems intersect with social factors, including housing, poverty, inadequate education, and geographical factors, such as access to locations and environmental factors. This project is dedicated to these populations and aims to provide a brand new method to address the vulnerability of such groups.
+The motivation behind this project is to support vulnerable populations around the world. Vulnerable populations include, but not limited to, economically disadvantaged, racial and ethnic minorities, the uninsured, low-income children, the elderly, the homeless, those with human immunodeficiency virus (HIV), and those with other chronic health conditions, including severe mental illness. It may also include rural residents, who often encounter barriers to accessing healthcare services. The vulnerability of these individuals is enhanced by race, ethnicity, age, sex, and factors such as income, insurance coverage (or lack thereof), and absence of a usual source of care. Their health and healthcare problems intersect with social factors, including housing, poverty, inadequate education, and geographical factors, such as access to locations and environmental factors. This project is dedicated to these populations and aims to provide a brand new method to address such groups.
 
 ### Authors
 
 ![](img/hgis.png)
 
-The initial idea and design of this project is created by Bo Zhao, a geography professor at the University of Washington and the Pincipal Investigator at Humanistic GIS Laboratory. The initial development of the application is developed by Jou Ho, an undergraduate student at the University of Washington and a member of HGIS Lab. For more information about us and the HGIS Lab, visit our website at <https://hgis.uw.edu/>
+The initial idea and design of this project are created by Bo Zhao, a geography professor at the University of Washington and the Principal Investigator at Humanistic GIS Laboratory. The initial development of the application is developed by Jou Ho, an undergraduate student at the University of Washington and a member of HGIS Lab. For more information about the HGIS Lab and us, visit our website at <https://hgis.uw.edu/>
 
 ### Goals
 
@@ -48,13 +48,13 @@ A DApp has its backend code running on a decentralized peer-to-peer network. Con
 
 A DApp can have frontend code and user interfaces written in any language (just like an app) that can make calls to its backend. Furthermore, its frontend can be hosted on decentralized storage such as Swarm or IPFS.
 
-In this project, Ethereum network is used to create a DApp. Ethereum is one of the popular programmable blockchain in the world. Like other blockchains, Ethereum has a native cryptocurrency called Ether (ETH), but unlike other blockchains, Ethereum can do much more since Ethereum is programmable. This means that developers can use it to build new kinds of applications, notably DApp.
+In this project, the Ethereum network is used to create a DApp. Ethereum is one of the popular programmable blockchains in the world. Like other blockchains, Ethereum has a native cryptocurrency called Ether (ETH), but unlike other blockchains, Ethereum can do much more since Ethereum is programmable. This means that developers can use it to build new kinds of applications, notably DApp.
 
 If an app = frontend + server, since Ethereum contracts are code that runs on the global Ethereum decentralized peer-to-peer network, then:
 
 DApp = frontend + contracts
 
-Below is a sample of developing smart contract writte in a programming language called `solidity`:
+Below is a sample of developing smart contract written in a programming language called `solidity`:
 
     pragma solidity ^0.5.10;
 
@@ -140,28 +140,28 @@ The main disadvantages of using decentralized applications:
 
 -   Fixing bugs or updating DApps is difficult, as every peer in the network has to update their node software.
 -   Some applications require verification of user identity, and as there is no central authority to verify the user identity, it becomes an issue while developing such applications.
--   They are challenging to build because they use very complex protocols to achieve consensus, and **they have to be built to scale from the start itself** (very important). So we cannot just implement an idea and then, later on, add more features and scale it.
+-   They are challenging to build because they use complex protocols to achieve consensus, and **they have to be built to scale from the start itself** (very important). So we cannot just implement an idea and then, later on, add more features and scale it.
 
-These weaknesses are something that is yet to be solved for this project. We will need further ideas and improvements for our DApp in the future.
+These weaknesses are something that is yet to be solved for this project. We will need further ideas and improvements to our DApp in the future.
 
 ### Major Functions
 
-The followings are the main functionalities of this DApp, although these are subject to change and new functions may be added in the course of development.
+The following are the main functionalities of this DApp, although these are subject to change, new functions may be added in the course of development.
 
 -   A web map that allows users to navigate through different geographical regions.
--   A search bar which users can type in the address, place, or country to find their location of interests.
--   Users can post or create new call for donation by filling a registration form.
--   Visualization of posted donations by markers on the map. The amount of donation could also be visualized by different levels of color.
--   Pop up windows that shows up upon clicking on the markers. This window contains information about the donation post such as: the name of organization/individuals/population groups, description of the donation post (why do they need donation? who will be supported by the donation?), and the total amount of donation they already received, etc.
--   Users can donate their crypto currency to a location by clicking on the "donate" button on pop up window for each donation post. They can decide how much cryptocurrency (Ether) to donate.
+-   A search bar in which users can type in the address, place, or country to find their location of interests.
+-   Users can post or create a new call for donations by filling a registration form.
+-   Visualization of posted donations by markers on the map. Different levels of color could also visualize the amount of donation.
+-   Pop up windows that show up upon clicking on the markers. This window contains information about the donation post, such as the name of organization/individuals/population groups, description of the donation post (why do they need donation? who will be supported by the donation?), and the total amount of donation they already received, etc.
+-   Users can donate their cryptocurrency to a location by clicking on the "donate" button on the pop-up window for each donation post. They can decide how much cryptocurrency (Ether) to donate.
 -   A person who created the donation post can retrieve donated money to their cryptocurrency wallet (metamask)
 
-Above are the main functions of this DApp. However, there are, and will be, functions and details that will be needed in the future development of this application. This includes:
+Above are the main functions of this DApp. However, there are and will be, functions and details that will be needed in the future development of this application. This includes:
 
 -   professional website design
 -   professional data visualizations
--   functionalities that attracts large enough number of users
--   security measures against malicious use of this applications
+-   functionalities that attract large enough number of users
+-   security measures against malicious use of these applications
 -   improving overall user experience (UX) and user interface (UI)
 
 ### System Architecture
@@ -170,7 +170,7 @@ Above are the main functions of this DApp. However, there are, and will be, func
 
 #### Client Tier
 
-HTML, JavaScript, and CSS that composes a user interface. For the basemap, leaflet's open street map is used for simple and intuitive styled map. These UI elements are subject to change for improvements.
+HTML, JavaScript, and CSS that compose a user interface. For the base map, the leaflet's open street map is used for a simple and intuitive styled map. These UI elements are subject to change for improvements.
 
 Open Street Map view:
 
@@ -178,18 +178,18 @@ Open Street Map view:
 
 #### Logic Tier
 
-JavaScript is used to connect to the data stored inside Ethereum blockchain. It also processes the data retrieved from blockchain to visualize them in UI.
+JavaScript is used to connect to the data stored inside the Ethereum blockchain. It also processes the data retrieved from blockchain to visualize them in UI.
 
 #### Data Tier
 
-Smart contract represents the data structure and data storage for this DApp. It is written in `solidity` language and defines data structure and functions to be deployed to the Ethereum network. This smart contact can then be utilized to store and access data from external calls.
+A smart contract represents the data structure and data storage for this DApp. It is written in `solidity` language and defines data structure and functions to be deployed to the Ethereum network. This smart contract can then be utilized to store and access data from external calls.
 
 ### Main Libraries and Resources
 
-|Library|Description|Usage in this Project|
-|-|-|-|
-|Web3.js|web3.js is a collection of libraries which allow you to interact with a local or remote ethereum node, using a HTTP or IPC connection.|Used to talk to the Ethereum node, which allows utilizing the smart contract.|
-|jQuery|jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code. jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.|Used to write javascript in a more simple manner.|
-|Leaflet|Leaflet is a widely used open source JavaScript library used to build web mapping applications.|Used to access different basemap features and extensions that can be added, such as address search bar, to create an interactive web map.|
+| Library | Description                                                                                                                                                                                                                                                                         | Usage in this Project                                                                                                                      |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Web3.js | web3.js is a collection of libraries which allow you to interact with a local or remote Ethereum node, using an HTTP or IPC connection.                                                                                                                                             | Used to talk to the Ethereum node, which allows utilizing the smart contract.                                                              |
+| jQuery  | jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish and wraps them into methods that you can call with a single line of code. jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation. | Used to write javascript more straightforwardly.                                                                                           |
+| Leaflet | Leaflet is a widely-used open-source JavaScript library used to build web mapping applications.                                                                                                                                                                                     | Used to access different base map features and extensions that can be added, such as address search bar, to create an interactive web map. |
 
 ### Challenges and Concerns
