@@ -14,7 +14,7 @@ The motivation behind this project is to support vulnerable populations around t
 
 ![](img/hgis.png)
 
-The initial idea and design of this project are created by Bo Zhao, a geography professor at the University of Washington and the Principal Investigator at Humanistic GIS Laboratory. The initial development of the application is developed by Jou Ho, an undergraduate student at the University of Washington and a member of HGIS Lab. For more information about the HGIS Lab and us, visit our website at <https://hgis.uw.edu/>
+The initial idea and design of this project are created by Bo Zhao, a geography professor at the University of Washington and the Principal Investigator at Humanistic GIS Laboratory. The initial development of the application is developed by Jou Ho, an undergraduate student at the University of Washington and a member of HGIS Lab. For more information about the HGIS Lab and us, visit our website at <https://hgis.uw.edu/>.
 
 ### Goals
 
@@ -27,6 +27,10 @@ The goal of this project is to create a decentralized application (referred to a
     3.  **Traceability**: users can keep track of any transactions (explained later) made through the application.
 -   Ultimately, support the aforementioned vulnerable populations/geographies through the established donation platform.
 
+### Target Audience/users
+
+The target audience or target users are non-government organizations or individuals who are calling for donations. This application will provide them with a platform to perform a money transaction secured by blockchain technology.
+
 ### What is Blockchain and DApp
 
 #### Blockchain
@@ -35,7 +39,7 @@ The goal of this project is to create a decentralized application (referred to a
 
 A blockchain is a growing list of records, known as blocks, that are connected using cryptography. Every block contains a cryptanalytic hash of the previous block, a timestamp, and transaction information.
 
-By design, a blockchain is a proof against modification of the information. It is an open, distributed ledger that will record transactions between 2 parties with efficiency and during a verifiable and permanent manner. To be used as a distributed ledger, a blockchain is often managed by a peer-to-peer network put together adhering to a protocol for inter-node communication and confirming new blocks. Once recorded, the information in any given block cannot be altered retroactively without the alteration of all subsequent blocks, which needs a consensus of the network majority. Though blockchain records are not unalterable, blockchains are also thought of as secure by design and exemplify a distributed computing system with high Byzantine fault tolerance. A decentralized agreement has therefore been claimed with a blockchain.
+By design, a blockchain is a proof against modification of the information. It is an open, distributed ledger that will record transactions between 2 parties with efficiency and during a verifiable and permanent manner. To be used as a distributed ledger, a blockchain is often managed by a peer-to-peer network. It is put together adhering to a protocol for inter-node communication and confirming new blocks. Once recorded, the information in any given block cannot be altered retroactively without the alteration of all subsequent blocks, which needs a consensus of the network majority. Though blockchain records are not unalterable, blockchains are also thought of as secure by design and exemplify a distributed computing system with high Byzantine fault tolerance. A decentralized agreement has therefore been claimed with a blockchain.
 
 Blockchain was invented by someone (or cluster of people) using the name Satoshi Nakamoto in 2008 to serve as the public transaction ledger of the cryptocurrency bitcoin. The identity of Satoshi Nakamoto is unknown. The invention of the blockchain for bitcoin created the primary digital currency to unravel the double-spending downside without requiring a proper authority or central server. The bitcoin design has inspired different applications, and cryptocurrencies widely use blockchains that are transparent by the general public. Blockchain is taken into account a sort of payment rail. Non-public blockchains are proposed for business use.
 
@@ -130,7 +134,7 @@ The main advantages of using decentralized applications:
 
 -   Payment processing does not require a third-party financial operator. In a decentralized network, transactions between users are performed directly and in cryptocurrency.
 -   There is no need for registration or subscription due to the use of public and private keys for accessing data.
--   Open source and public registry make sure the platform is transparent and easy to use.
+-   Open source and civil registry make sure the platform is transparent and easy to use.
 
 These criteria are all beneficial in the development of a donation application.
 
@@ -140,7 +144,7 @@ The main disadvantages of using decentralized applications:
 
 -   Fixing bugs or updating DApps is difficult, as every peer in the network has to update their node software.
 -   Some applications require verification of user identity, and as there is no central authority to verify the user identity, it becomes an issue while developing such applications.
--   They are challenging to build because they use complex protocols to achieve consensus, and **they have to be built to scale from the start itself** (very important). So we cannot just implement an idea and then, later on, add more features and scale it.
+-   They are challenging to build because they use complex protocols to achieve consensus and **they have to be made to scale from the start itself** (very important). So we cannot just implement an idea and then, later on, add more features and scale it.
 
 These weaknesses are something that is yet to be solved for this project. We will need further ideas and improvements to our DApp in the future.
 
@@ -150,7 +154,7 @@ The following are the main functionalities of this DApp, although these are subj
 
 -   A web map that allows users to navigate through different geographical regions.
 -   A search bar in which users can type in the address, place, or country to find their location of interests.
--   Users can post or create a new call for donations by filling a registration form.
+-   Users can post or create a new call for donations by filling a registration form. The input values include the name of the organization or individual calling for donation, a description of why they need donation, and the amount of Ether they would like to achieve for their donation.
 -   Visualization of posted donations by markers on the map. Different levels of color could also visualize the amount of donation.
 -   Pop up windows that show up upon clicking on the markers. This window contains information about the donation post, such as the name of organization/individuals/population groups, description of the donation post (why do they need donation? who will be supported by the donation?), and the total amount of donation they already received, etc.
 -   Users can donate their cryptocurrency to a location by clicking on the "donate" button on the pop-up window for each donation post. They can decide how much cryptocurrency (Ether) to donate.
@@ -193,3 +197,13 @@ A smart contract represents the data structure and data storage for this DApp. I
 | Leaflet | Leaflet is a widely-used open-source JavaScript library used to build web mapping applications.                                                                                                                                                                                     | Used to access different base map features and extensions that can be added, such as address search bar, to create an interactive web map. |
 
 ### Challenges and Concerns
+
+Below are some of the significant challenges and concerns that we need to consider upon further developing this application:
+
+-   How to attract a stable number of users? A reliable business strategy for spreading this application is crucial, whether it could be an advertisement, sponsorship, or post on social media.
+-   Similar to the above, what are the advantages of using this application over other related donation application? This distinction must be made clear to clarify the benefits of using DApp and attract more users.
+-   Political implications and research politics must be considered. Since decentralized applications using blockchain do not require a central data manager, independency from authorities such as tech companies might imply anarchistic ideas. To clarify, this project's purpose is purely to support people in need of financial support, and we try to limit the politics of this research as much as possible.
+
+### Contacts
+
+If you are interested in this project or would like to provide any ideas, please contact Jou Ho at jouh@uw.edu.
