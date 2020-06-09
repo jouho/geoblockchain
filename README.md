@@ -180,6 +180,10 @@ Open Street Map view:
 
 ![](img/osm.png)
 
+Sample image of the application UI:
+
+![](img/sample.png)
+
 #### Logic Tier
 
 JavaScript is used to connect to the data stored inside the Ethereum blockchain. It also processes the data retrieved from blockchain to visualize them in UI.
