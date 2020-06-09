@@ -204,6 +204,9 @@ Below are some of the significant challenges and concerns that we need to consid
 -   Similar to the above, what are the advantages of using this application over other related donation application? This distinction must be made clear to clarify the benefits of using DApp and attract more users.
 -   Political implications and research politics must be considered. Since decentralized applications using blockchain do not require a central data manager, independency from authorities such as tech companies might imply anarchistic ideas. To clarify, this project's purpose is purely to support people in need of financial support, and we try to limit the politics of this research as much as possible.
 
+### Ackowledgement
+This project and the application is still under development. The source code will be published once the application is publicly deployed.
+
 ### Contacts
 
 If you are interested in this project or would like to provide any ideas, please contact Jou Ho at jouh@uw.edu.
