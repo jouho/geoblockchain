@@ -212,7 +212,7 @@ Below are some of the significant challenges and concerns that we need to consid
 
 ### Ackowledgement
 
-This project and the application is still under development. The source code will be published once the application is publicly deployed.
+This project and the application is still **under development**. The source code will be published once the application is publicly deployed.
 
 ### Contacts
 
