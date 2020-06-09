@@ -21,6 +21,7 @@ The initial idea and design of this project are created by Bo Zhao, a geography 
 The goal of this project is to create a decentralized application (referred to as DApp) as opposed to typical applications where the backend code is running on centralized servers. This application allows users to donate cryptocurrency to any geographic regions that exist on the earth. This web-based platform will enable us to achieve the following primary goals:
 
 -   Visualize vulnerable population through the levels of donation different geographical region receives. This visualization is open for anyone to see, allowing other people to utilize for reference or any related studies.
+-   Allows users to put 'values' to different geographical locations. This lets us visualize the values of geographical locations virtually.
 -   Provide a brand-new way to donate currency to vulnerable populations using blockchain  technology (explained in later sections), which allows us to create a donation application with the three critical following features, which introduces a more reliable and secured system architecture for donation purposes;
     1.  **Immutability**: no one can alter the stored data nor change the program code for this application for malicious purposes.
     2.  **Transparency**: every stored data, program code, and data processes are accessible for users to see, though immutable.
